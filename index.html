@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jednoduchá ukázková stránka projektu Google Search.">
+    <title>Google Search – Domů</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="Google Search – domů">
+            <span class="brand-mark" aria-hidden="true">G</span>
+            <span>Search<span class="brand-period">.</span></span>
+        </a>
+        <nav class="site-nav" aria-label="Hlavní navigace">
+            <a class="nav-link active" href="index.html" aria-current="page">Domů</a>
+            <a class="nav-link" href="formular.html">Ukázka formulářů</a>
+            <a class="nav-link" href="https://github.com/DavidSchaffartzik" target="_blank" rel="noopener noreferrer">Portfolio</a>
+        </nav>
+    </header>
+
+    <main class="home-main">
+        <section class="hero-layout" aria-labelledby="page-title">
+            <div class="search-panel">
+                <p class="eyebrow"><span class="status-dot"></span> Váš nový start na webu</p>
+                <h1 id="page-title">Velký web.<br><span class="gradient-text">Jeden dotaz.</span></h1>
+                <p class="intro">Nápady, odpovědi i nové objevy — začínají jediným hledáním.</p>
+
+                <form class="search-form" action="https://www.google.com/search" method="get">
+                    <label class="visually-hidden" for="search-query">Hledaný výraz</label>
+                    <span class="search-icon" aria-hidden="true">⌕</span>
+                    <input id="search-query" name="q" type="search" placeholder="Co máte na mysli?" required>
+                    <button class="button button-primary search-button" type="submit"><span>Hledat</span><span aria-hidden="true">↗</span></button>
+                </form>
+
+                <div class="quick-searches">
+                    <span>Rychlé inspirace</span>
+                    <a href="https://www.google.com/search?q=design+inspirace" target="_blank" rel="noopener noreferrer">Design</a>
+                    <a href="https://www.google.com/search?q=novinky+technologie" target="_blank" rel="noopener noreferrer">Technologie</a>
+                    <a href="https://www.google.com/search?q=tipy+na+cestovani" target="_blank" rel="noopener noreferrer">Cestování</a>
+                </div>
+
+                <a class="form-link" href="formular.html">Prozkoumat ukázku formulářů <span aria-hidden="true">↗</span></a>
+            </div>
+
+            <aside class="preview-card" aria-label="Ukázka výsledků vyhledávání">
+                <div class="preview-topline">
+                    <span class="preview-live"><span class="status-dot"></span> ŽIVÉ HLEDÁNÍ</span>
+                    <span class="preview-menu" aria-hidden="true">•••</span>
+                </div>
+                <div class="preview-query"><span aria-hidden="true">⌕</span> inspirace na dnešek</div>
+                <div class="preview-divider"></div>
+                <article class="result-card">
+                    <span class="result-domain"><span class="domain-icon">A</span> atlasnápadů.cz</span>
+                    <h2>Malé nápady, velké začátky</h2>
+                    <p>Objevte inspiraci, která vás posune dál. Třeba právě dnes.</p>
+                    <span class="result-tag">Doporučeno pro vás <span aria-hidden="true">✳</span></span>
+                </article>
+                <div class="preview-bottom">
+                    <span class="result-index">01 <span>/</span> 10</span>
+                    <span class="preview-arrow" aria-hidden="true">↗</span>
+                </div>
+                <span class="floating-spark spark-one" aria-hidden="true">✳</span>
+                <span class="floating-spark spark-two" aria-hidden="true">✦</span>
+            </aside>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p class="footer-note">Vytvořeno jako ukázkový školní projekt.</p>
+        <nav class="footer-links" aria-label="Odkazy na validaci a zdroje">
+            <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fraw.githubusercontent.com%2FDavidSchaffartzik%2Fgooglesearch%2Fmain%2Findex.html" target="_blank" rel="noopener noreferrer">Validovat HTML</a>
+            <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fraw.githubusercontent.com%2FDavidSchaffartzik%2Fgooglesearch%2Fmain%2Fstyle.css" target="_blank" rel="noopener noreferrer">Validovat CSS</a>
+            <a href="https://github.com/DavidSchaffartzik/googlesearch/blob/main/citace.md" target="_blank" rel="noopener noreferrer">Citace a zdroje</a>
+            <a href="https://github.com/DavidSchaffartzik" target="_blank" rel="noopener noreferrer">Portfolio – GitHub</a>
+        </nav>
+    </footer>
+</body>
+</html>
